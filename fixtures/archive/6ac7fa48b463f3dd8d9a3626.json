@@ -1,0 +1,599 @@
+{
+ "fetchedAt": "2026-10-08T20:17:17.813Z",
+ "raw": {
+  "search_metadata": {
+   "id": "6ac7fa48b463f3dd8d9a3626",
+   "status": "Success",
+   "json_endpoint": "https://serpapi.com/searches/yOkzwBXS83rXZY7AM8JWeP-u97Y9WQrUxFQYhpgPz8U/6ac7fa48b463f3dd8d9a3626.json",
+   "markdown_endpoint": "https://serpapi.com/searches/yOkzwBXS83rXZY7AM8JWeP-u97Y9WQrUxFQYhpgPz8U/6ac7fa48b463f3dd8d9a3626.md",
+   "created_at": "2026-10-08 20:17:12 UTC",
+   "processed_at": "2026-10-08 20:17:12 UTC",
+   "google_scholar_url": "https://scholar.google.com/scholar?q=Indian+summer+monsoon+rainfall+prediction&hl=en",
+   "raw_html_file": "https://serpapi.com/searches/yOkzwBXS83rXZY7AM8JWeP-u97Y9WQrUxFQYhpgPz8U/6ac7fa48b463f3dd8d9a3626.html",
+   "total_time_taken": 0.55
+  },
+  "search_parameters": {
+   "engine": "google_scholar",
+   "q": "Indian summer monsoon rainfall prediction",
+   "hl": "en"
+  },
+  "search_information": {
+   "organic_results_state": "Results for exact spelling",
+   "total_results": 150000,
+   "time_taken_displayed": 0.22,
+   "query_displayed": "Indian summer monsoon rainfall prediction"
+  },
+  "organic_results": [
+   {
+    "position": 1,
+    "title": "All India summer monsoon rainfall prediction using an artificial neural network",
+    "result_id": "PZ98DSTo6H0J",
+    "link": "https://link.springer.com/article/10.1007/s003820050328",
+    "snippet": "… Abstract The prediction of Indian summer monsoon rainfall (… The prediction of ISMR on monthly and seasonal time scales … -propagation algorithm to provide prediction (hindcast) of ISMR …",
+    "publication_info": {
+     "summary": "AK Sahai, MK Soman, V Satyan - Climate dynamics, 2000 - Springer",
+     "authors": [
+      {
+       "name": "AK Sahai"
+      },
+      {
+       "name": "MK Soman"
+      },
+      {
+       "name": "V Satyan"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "PDF",
+      "link": null
+     },
+     {
+      "title": "academia.edu",
+      "file_format": "PDF",
+      "link": "https://www.academia.edu/download/50688853/s00382005032820161202-19218-ues0to.pdf"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=PZ98DSTo6H0J",
+     "cited_by": {
+      "total": 251,
+      "link": "https://scholar.google.com/scholar?cites=9072756690880601917&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "9072756690880601917",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=9072756690880601917&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:PZ98DSTo6H0J:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3APZ98DSTo6H0J%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 16,
+      "link": "https://scholar.google.com/scholar?cluster=9072756690880601917&hl=en&as_sdt=0,41",
+      "cluster_id": "9072756690880601917",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=9072756690880601917&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 2,
+    "title": "Indian summer monsoon rainfall prediction using artificial neural network",
+    "result_id": "Mu12l2qHtk4J",
+    "link": "https://link.springer.com/article/10.1007/s00477-013-0695-0",
+    "snippet": "… in the field of monsoon meteorology. The ensemble of … forecasting of Indian summer monsoon rainfall (ISMR) up to some extent. But due to the nonlinear nature of ISMR, its forecasting …",
+    "publication_info": {
+     "summary": "P Singh, B Borah - Stochastic environmental research and risk …, 2013 - Springer",
+     "authors": [
+      {
+       "name": "P Singh"
+      },
+      {
+       "name": "B Borah",
+       "link": "https://scholar.google.com/citations?user=fNq_5xcAAAAJ&hl=en&oi=sra",
+       "author_id": "fNq_5xcAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=fNq_5xcAAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=Mu12l2qHtk4J",
+     "cited_by": {
+      "total": 189,
+      "link": "https://scholar.google.com/scholar?cites=5671869672597155122&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "5671869672597155122",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=5671869672597155122&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:Mu12l2qHtk4J:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AMu12l2qHtk4J%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 11,
+      "link": "https://scholar.google.com/scholar?cluster=5671869672597155122&hl=en&as_sdt=0,41",
+      "cluster_id": "5671869672597155122",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=5671869672597155122&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 3,
+    "title": "Prediction of Indian summer monsoon rainfall using Niño indices: a neural network approach",
+    "result_id": "bV9z9yuJwzcJ",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0169809511001918",
+    "snippet": "… forcing of the All India Rainfall Index variability. However, the … seasonal forecast skill of the Indian Summer Monsoon Rainfall … the onset of monsoon. These SST indices are used for …",
+    "publication_info": {
+     "summary": "RP Shukla, KC Tripathi, AC Pandey, IML Das - Atmospheric Research, 2011 - Elsevier",
+     "authors": [
+      {
+       "name": "RP Shukla",
+       "link": "https://scholar.google.com/citations?user=lAVjrMUAAAAJ&hl=en&oi=sra",
+       "author_id": "lAVjrMUAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=lAVjrMUAAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "KC Tripathi",
+       "link": "https://scholar.google.com/citations?user=24RV1gQAAAAJ&hl=en&oi=sra",
+       "author_id": "24RV1gQAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=24RV1gQAAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "AC Pandey"
+      },
+      {
+       "name": "IML Das"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "HTML",
+      "link": null
+     },
+     {
+      "title": "academia.edu",
+      "file_format": "HTML",
+      "link": "https://www.academia.edu/download/42951728/Prediction_of_the_Indian_summer_monsoon_20160222-20762-e2iqpp.pdf"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=bV9z9yuJwzcJ",
+     "html_version": "https://www.academia.edu/download/42951728/Prediction_of_the_Indian_summer_monsoon_20160222-20762-e2iqpp.pdf",
+     "cited_by": {
+      "total": 137,
+      "link": "https://scholar.google.com/scholar?cites=4018206114472746861&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "4018206114472746861",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=4018206114472746861&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:bV9z9yuJwzcJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AbV9z9yuJwzcJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 9,
+      "link": "https://scholar.google.com/scholar?cluster=4018206114472746861&hl=en&as_sdt=0,41",
+      "cluster_id": "4018206114472746861",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=4018206114472746861&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 4,
+    "title": "Empirical prediction of the summer monsoon rainfall over India",
+    "result_id": "phWikDxvbGYJ",
+    "link": "https://journals.ametsoc.org/view/journals/mwre/115/3/1520-0493_1987_115_0695_epotsm_2_0_co_2.xml",
+    "snippet": "… to predict the Indian summer monsoon rainfall. The difference between the April and January sea level pressure at Darwin will be used as a measure of the tendency of the Southern …",
+    "publication_info": {
+     "summary": "J Shukla, DA Mooley - Monthly Weather Review, 1987 - journals.ametsoc.org",
+     "authors": [
+      {
+       "name": "J Shukla"
+      },
+      {
+       "name": "DA Mooley"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "PDF",
+      "link": null
+     },
+     {
+      "title": "ametsoc.org",
+      "file_format": "PDF",
+      "link": "https://journals.ametsoc.org/downloadpdf/view/journals/mwre/115/3/1520-0493_1987_115_0695_epotsm_2_0_co_2.pdf"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=phWikDxvbGYJ",
+     "cited_by": {
+      "total": 310,
+      "link": "https://scholar.google.com/scholar?cites=7380396195268662694&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "7380396195268662694",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=7380396195268662694&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:phWikDxvbGYJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AphWikDxvbGYJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 11,
+      "link": "https://scholar.google.com/scholar?cluster=7380396195268662694&hl=en&as_sdt=0,41",
+      "cluster_id": "7380396195268662694",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=7380396195268662694&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 5,
+    "title": "Skill of Indian summer monsoon rainfall prediction in multiple seasonal prediction systems",
+    "result_id": "uR5bLWIpfzwJ",
+    "link": "https://link.springer.com/article/10.1007/s00382-018-4449-z",
+    "snippet": "… We use seasonal forecasts from the Climate Historical Forecast … in predicting Indian summer monsoon precipitation. The multi-model average of seasonal forecasts from eight prediction …",
+    "publication_info": {
+     "summary": "S Jain, AA Scaife, AK Mitra - Climate Dynamics, 2019 - Springer",
+     "authors": [
+      {
+       "name": "S Jain",
+       "link": "https://scholar.google.com/citations?user=4c2alX8AAAAJ&hl=en&oi=sra",
+       "author_id": "4c2alX8AAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=4c2alX8AAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "AA Scaife",
+       "link": "https://scholar.google.com/citations?user=I4Xnl-oAAAAJ&hl=en&oi=sra",
+       "author_id": "I4Xnl-oAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=I4Xnl-oAAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "AK Mitra",
+       "link": "https://scholar.google.com/citations?user=yQN8WZcAAAAJ&hl=en&oi=sra",
+       "author_id": "yQN8WZcAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=yQN8WZcAAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=uR5bLWIpfzwJ",
+     "cited_by": {
+      "total": 53,
+      "link": "https://scholar.google.com/scholar?cites=4359248465962409657&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "4359248465962409657",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=4359248465962409657&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:uR5bLWIpfzwJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AuR5bLWIpfzwJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 10,
+      "link": "https://scholar.google.com/scholar?cluster=4359248465962409657&hl=en&as_sdt=0,41",
+      "cluster_id": "4359248465962409657",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=4359248465962409657&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 6,
+    "title": "Indian summer monsoon rainfall prediction: a comparison of iterative and non-iterative approaches",
+    "result_id": "GnXYvjuMK4cJ",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1568494617305379",
+    "snippet": "… Accurate forecasting of Indian summer monsoon rainfall (… in the recent time for monsoon forecast, whereas for some reason … network (SLFN) in ISMR forecast and for the first time apply …",
+    "publication_info": {
+     "summary": "Y Dash, SK Mishra, S Sahany, BK Panigrahi - Applied Soft Computing, 2018 - Elsevier",
+     "authors": [
+      {
+       "name": "Y Dash"
+      },
+      {
+       "name": "SK Mishra"
+      },
+      {
+       "name": "S Sahany",
+       "link": "https://scholar.google.com/citations?user=QFW87z8AAAAJ&hl=en&oi=sra",
+       "author_id": "QFW87z8AAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=QFW87z8AAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "BK Panigrahi",
+       "link": "https://scholar.google.com/citations?user=2d_EOToAAAAJ&hl=en&oi=sra",
+       "author_id": "2d_EOToAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=2d_EOToAAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=GnXYvjuMK4cJ",
+     "cited_by": {
+      "total": 60,
+      "link": "https://scholar.google.com/scholar?cites=9740032807351645466&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "9740032807351645466",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=9740032807351645466&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:GnXYvjuMK4cJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AGnXYvjuMK4cJ%3Ascholar.google.com%2F"
+    }
+   },
+   {
+    "position": 7,
+    "title": "Improving Indian summer monsoon rainfall prediction using deep learning up to two years in advance",
+    "result_id": "qYcjqQvoWrwJ",
+    "link": "https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.70023",
+    "snippet": "… Long-lead seasonal forecasts (>12 months) of the Indian summer monsoon rainfall (ISMR) … and drift of forecast climatology with lead month drive the seasonal forecast skill of ISMR by …",
+    "publication_info": {
+     "summary": "D Sharma, S Das, D Chakraborty… - Quarterly Journal of …, 2026 - Wiley Online Library",
+     "authors": [
+      {
+       "name": "D Sharma"
+      },
+      {
+       "name": "S Das",
+       "link": "https://scholar.google.com/citations?user=hUf4SCUAAAAJ&hl=en&oi=sra",
+       "author_id": "hUf4SCUAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=hUf4SCUAAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "D Chakraborty",
+       "link": "https://scholar.google.com/citations?user=P8jS_a4AAAAJ&hl=en&oi=sra",
+       "author_id": "P8jS_a4AAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=P8jS_a4AAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=qYcjqQvoWrwJ",
+     "cited_by": {
+      "total": 7,
+      "link": "https://scholar.google.com/scholar?cites=13572415563814373289&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "13572415563814373289",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=13572415563814373289&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:qYcjqQvoWrwJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AqYcjqQvoWrwJ%3Ascholar.google.com%2F"
+    }
+   },
+   {
+    "position": 8,
+    "title": "Prediction of Indian summer monsoon: Status, problems and prospects",
+    "result_id": "MiMEN4kUr0gJ",
+    "link": "https://www.jstor.org/stable/24106570",
+    "snippet": "… , we show that Indian summer monsoon predictability exhibits epo chal variations. During the recent years the model is showing poor forecast skill due to weakened coupling … and Indian …",
+    "publication_info": {
+     "summary": "M Rajeevan - Current Science, 2001 - JSTOR",
+     "authors": [
+      {
+       "name": "M Rajeevan",
+       "link": "https://scholar.google.com/citations?user=ibTFfv8AAAAJ&hl=en&oi=sra",
+       "author_id": "ibTFfv8AAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=ibTFfv8AAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "PDF",
+      "link": null
+     },
+     {
+      "title": "ias.ac.in",
+      "file_format": "PDF",
+      "link": "https://repository.ias.ac.in/94365/1/prediction.pdf"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=MiMEN4kUr0gJ",
+     "cited_by": {
+      "total": 178,
+      "link": "https://scholar.google.com/scholar?cites=5237427471221269298&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "5237427471221269298",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=5237427471221269298&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:MiMEN4kUr0gJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AMiMEN4kUr0gJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 4,
+      "link": "https://scholar.google.com/scholar?cluster=5237427471221269298&hl=en&as_sdt=0,41",
+      "cluster_id": "5237427471221269298",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=5237427471221269298&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 9,
+    "title": "Prediction of all‐India summer monsoon rainfall with regional and large‐scale parameters",
+    "result_id": "slywkeb5gkkJ",
+    "link": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JD093iD05p05341",
+    "snippet": "… ters and Indian summer monsoon rainfall were computed … prior to the onset of the monsoon season. It was shown by … parameter in a prediction equation of the monsoon rainfall. This was …",
+    "publication_info": {
+     "summary": "B Parthasarathy, HF Diaz… - Journal of Geophysical …, 1988 - Wiley Online Library",
+     "authors": [
+      {
+       "name": "B Parthasarathy"
+      },
+      {
+       "name": "HF Diaz",
+       "link": "https://scholar.google.com/citations?user=BkhItbcAAAAJ&hl=en&oi=sra",
+       "author_id": "BkhItbcAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=BkhItbcAAAAJ&engine=google_scholar_author&hl=en"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "HTML",
+      "link": null
+     },
+     {
+      "title": "academia.edu",
+      "file_format": "HTML",
+      "link": "https://www.academia.edu/download/50688855/jd093id05p0534120161202-29897-1qf9ic9.pdf"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=slywkeb5gkkJ",
+     "html_version": "https://www.academia.edu/download/50688855/jd093id05p0534120161202-29897-1qf9ic9.pdf",
+     "cited_by": {
+      "total": 121,
+      "link": "https://scholar.google.com/scholar?cites=5297070880423173298&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "5297070880423173298",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=5297070880423173298&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:slywkeb5gkkJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3Aslywkeb5gkkJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 8,
+      "link": "https://scholar.google.com/scholar?cluster=5297070880423173298&hl=en&as_sdt=0,41",
+      "cluster_id": "5297070880423173298",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=5297070880423173298&engine=google_scholar&hl=en"
+     }
+    }
+   },
+   {
+    "position": 10,
+    "title": "Climate models produce skillful predictions of Indian summer monsoon rainfall",
+    "result_id": "S4YqVXbY5CsJ",
+    "link": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2012GL051279",
+    "snippet": "… forecasting and fifty years of climate model development, this paper shows that the skill of predicting Indian monsoon rainfall … higher than can be predicted empirically from May sea …",
+    "publication_info": {
+     "summary": "T DelSole, J Shukla - Geophysical Research Letters, 2012 - Wiley Online Library",
+     "authors": [
+      {
+       "name": "T DelSole",
+       "link": "https://scholar.google.com/citations?user=rCWcKowAAAAJ&hl=en&oi=sra",
+       "author_id": "rCWcKowAAAAJ",
+       "serpapi_scholar_link": "https://serpapi.com/search.json?author_id=rCWcKowAAAAJ&engine=google_scholar_author&hl=en"
+      },
+      {
+       "name": "J Shukla"
+      }
+     ]
+    },
+    "resources": [
+     {
+      "title": "",
+      "file_format": "PDF",
+      "link": null
+     },
+     {
+      "title": "wiley.com",
+      "file_format": "PDF",
+      "link": "https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2012GL051279"
+     },
+     {
+      "title": "Full View",
+      "link": "https://scholar.google.com/scholar?output=instlink&q=info:S4YqVXbY5CsJ:scholar.google.com/&hl=en&as_sdt=0,41&scillfp=13166434807780078505&oi=lle"
+     }
+    ],
+    "inline_links": {
+     "serpapi_cite_link": "https://serpapi.com/search.json?engine=google_scholar_cite&hl=en&q=S4YqVXbY5CsJ",
+     "cited_by": {
+      "total": 107,
+      "link": "https://scholar.google.com/scholar?cites=3162890841067521611&as_sdt=5,41&sciodt=0,41&hl=en",
+      "cites_id": "3162890841067521611",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=5%2C41&cites=3162890841067521611&engine=google_scholar&hl=en"
+     },
+     "related_pages_link": "https://scholar.google.com/scholar?q=related:S4YqVXbY5CsJ:scholar.google.com/&scioq=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+     "serpapi_related_pages_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=related%3AS4YqVXbY5CsJ%3Ascholar.google.com%2F",
+     "versions": {
+      "total": 7,
+      "link": "https://scholar.google.com/scholar?cluster=3162890841067521611&hl=en&as_sdt=0,41",
+      "cluster_id": "3162890841067521611",
+      "serpapi_scholar_link": "https://serpapi.com/search.json?as_sdt=0%2C41&cluster=3162890841067521611&engine=google_scholar&hl=en"
+     }
+    }
+   }
+  ],
+  "related_searches": [
+   {
+    "query": "seasonal prediction indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=1&q=seasonal+prediction+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "summer monsoon rainfall prediction two years",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=2&q=summer+monsoon+rainfall+prediction+two+years&qst=br"
+   },
+   {
+    "query": "regression model indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=3&q=regression+model+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "climate models indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=4&q=climate+models+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "peninsular india summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=5&q=peninsular+india+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "lead forecast indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=6&q=lead+forecast+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "statistical forecasts indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=7&q=statistical+forecasts+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "extremes of indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=8&q=extremes+of+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "forecast system indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=9&q=forecast+system+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "multi-scale variability indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=10&q=multi-scale+variability+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "time step indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=11&q=time+step+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "india summer monsoon rainfall back propagation",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=12&q=india+summer+monsoon+rainfall+back+propagation&qst=br"
+   },
+   {
+    "query": "earth observation indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=13&q=earth+observation+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "network approach indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=14&q=network+approach+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "network model indian summer monsoon rainfall",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=15&q=network+model+indian+summer+monsoon+rainfall&qst=br"
+   },
+   {
+    "query": "india summer monsoon rainfall large scale",
+    "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,41&qsp=16&q=india+summer+monsoon+rainfall+large+scale&qst=br"
+   }
+  ],
+  "pagination": {
+   "current": 1,
+   "next": "https://scholar.google.com/scholar?start=10&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+   "other_pages": {
+    "2": "https://scholar.google.com/scholar?start=10&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "3": "https://scholar.google.com/scholar?start=20&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "4": "https://scholar.google.com/scholar?start=30&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "5": "https://scholar.google.com/scholar?start=40&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "6": "https://scholar.google.com/scholar?start=50&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "7": "https://scholar.google.com/scholar?start=60&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "8": "https://scholar.google.com/scholar?start=70&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "9": "https://scholar.google.com/scholar?start=80&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41",
+    "10": "https://scholar.google.com/scholar?start=90&q=Indian+summer+monsoon+rainfall+prediction&hl=en&as_sdt=0,41"
+   }
+  },
+  "serpapi_pagination": {
+   "current": 1,
+   "next_link": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=10",
+   "next": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=10",
+   "other_pages": {
+    "2": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=10",
+    "3": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=20",
+    "4": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=30",
+    "5": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=40",
+    "6": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=50",
+    "7": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=60",
+    "8": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=70",
+    "9": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=80",
+    "10": "https://serpapi.com/search.json?as_sdt=0%2C41&engine=google_scholar&hl=en&q=Indian+summer+monsoon+rainfall+prediction&start=90"
+   }
+  }
+ }
+}

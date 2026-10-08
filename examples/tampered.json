@@ -1,0 +1,26 @@
+{
+  "v": 1,
+  "engine": "google_scholar",
+  "params": {
+    "engine": "google_scholar",
+    "q": "Indian summer monsoon rainfall prediction"
+  },
+  "search_id": "6ac7fa48b463f3dd8d9a3626",
+  "processed_at": "2026-10-08 20:17:12 UTC",
+  "search_url": "https://scholar.google.com/scholar?q=Indian+summer+monsoon+rainfall+prediction&hl=en",
+  "archive_url": "https://serpapi.com/searches/6ac7fa48b463f3dd8d9a3626.json",
+  "json_endpoint": "https://serpapi.com/searches/yOkzwBXS83rXZY7AM8JWeP-u97Y9WQrUxFQYhpgPz8U/6ac7fa48b463f3dd8d9a3626.json",
+  "pointer": "/organic_results/0",
+  "item_sha256": "781db4c63f713c5ba074aa051a5bdaf1b3ac398d7b00e7373b0e0f752ab73c5f",
+  "result_url": "https://link.springer.com/article/10.1007/s003820050328",
+  "cited": {
+    "title": "All India summer monsoon rainfall prediction using an artificial neural network",
+    "link": "https://link.springer.com/article/10.1007/s003820050328",
+    "publication_info.summary": "AK Sahai, MK Soman, V Satyan - Climate dynamics, 2000 - Springer",
+    "inline_links.cited_by.total": 2510,
+    "snippet": "… Abstract The prediction of Indian summer monsoon rainfall (… The prediction of ISMR on monthly and seasonal time scales … -propagation algorithm to provide prediction (hindcast) of ISMR …"
+  },
+  "receipt_id": "sr_7492ef5039cc4907e74c",
+  "retrieved_at": "2026-10-08T20:17:13.139Z",
+  "source": "LIVE"
+}

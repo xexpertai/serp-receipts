@@ -1,0 +1,231 @@
+{
+ "voice": "af_heart",
+ "speed": 1.0,
+ "gap": 0.3,
+ "lines": [
+  {
+   "id": "s01",
+   "do": [
+    [
+     "card",
+     "title"
+    ]
+   ],
+   "text": "When an AI agent quotes a search result, how do you know the number is real?"
+  },
+  {
+   "id": "s02",
+   "do": [
+    [
+     "card",
+     "how"
+    ]
+   ],
+   "text": "serp-receipts is an open-source MCP server for SerpApi. Every result comes with a receipt, and any agent can check it.",
+   "say": "Serp receipts is an open-source M C P server for Serp A P I. Every result comes with a receipt, and any agent can check it."
+  },
+  {
+   "id": "s03",
+   "do": [
+    [
+     "show",
+     "tools"
+    ],
+    [
+     "hl",
+     "#chips"
+    ]
+   ],
+   "text": "An MCP client connects and sees four tools: search, get receipt, verify receipt, and credits.",
+   "say": "An M C P client connects, and sees four tools: search, get receipt, verify receipt, and credits."
+  },
+  {
+   "id": "s04",
+   "do": [
+    [
+     "show",
+     "search"
+    ],
+    [
+     "hl",
+     "#m-A-search"
+    ],
+    [
+     "wait",
+     4800
+    ],
+    [
+     "hl",
+     "#tagA"
+    ]
+   ],
+   "text": "Agent A runs a scholar search on Indian summer monsoon rainfall prediction. It is a replay of a real SerpApi search, so it costs no credits.",
+   "say": "Agent A runs a scholar search on Indian summer monsoon rainfall prediction. It is a replay of a real Serp A P I search, so it costs no credits."
+  },
+  {
+   "id": "s05",
+   "do": [
+    [
+     "show",
+     "results"
+    ],
+    [
+     "hl",
+     "#row0"
+    ]
+   ],
+   "text": "Every result has a receipt ID. The top paper is cited by 251.",
+   "say": "Every result has a receipt I D. The top paper is cited by two hundred and fifty one."
+  },
+  {
+   "id": "s06",
+   "do": [
+    [
+     "show",
+     "receipt"
+    ],
+    [
+     "hl",
+     "#m-A-receipt"
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "hl",
+     "#kv-engine"
+    ],
+    [
+     "wait",
+     900
+    ],
+    [
+     "hl",
+     "#kv-params"
+    ],
+    [
+     "wait",
+     2700
+    ],
+    [
+     "hl",
+     "#kv-search_id"
+    ],
+    [
+     "wait",
+     2600
+    ],
+    [
+     "hl",
+     "#kv-pointer"
+    ],
+    [
+     "wait",
+     1200
+    ],
+    [
+     "hl",
+     "#kv-item_sha256"
+    ]
+   ],
+   "text": "Its receipt pins the engine, the parameters without the API key, SerpApi's search ID and time, a JSON pointer, and a hash of the result.",
+   "say": "Its receipt pins the engine, the parameters without the A P I key, Serp A P I's search I D and time, a Jason pointer, and a hash of the result."
+  },
+  {
+   "id": "s07",
+   "do": [
+    [
+     "show",
+     "verify"
+    ],
+    [
+     "hl",
+     "#btag"
+    ],
+    [
+     "wait",
+     3200
+    ],
+    [
+     "hl",
+     "#m-B-verify"
+    ]
+   ],
+   "text": "Verifier B has no SerpApi key at all. It re-fetches the original search from SerpApi's archive, live, and checks the claim.",
+   "say": "Verifier B has no Serp A P I key at all. It re-fetches the original search from Serp A P I's archive, live, and checks the claim."
+  },
+  {
+   "id": "s08",
+   "do": [
+    [
+     "show",
+     "verified"
+    ],
+    [
+     "hl",
+     "#v1"
+    ]
+   ],
+   "text": "Receipt intact, same search, hash matches, and the count really is 251. Verified.",
+   "say": "Receipt intact, same search, hash matches, and the count really is two hundred and fifty one. Verified."
+  },
+  {
+   "id": "s09",
+   "do": [
+    [
+     "show",
+     "tamper"
+    ],
+    [
+     "hl",
+     "#m-B-tamper"
+    ],
+    [
+     "wait",
+     4000
+    ],
+    [
+     "show",
+     "tampered"
+    ],
+    [
+     "hl",
+     "#m-B-tampered"
+    ]
+   ],
+   "text": "Now someone edits the receipt to say 2510. Verification fails, and shows what the archive really says.",
+   "say": "Now someone edits the receipt to say two thousand five hundred and ten. Verification fails, and shows what the archive really says."
+  },
+  {
+   "id": "s10",
+   "do": [
+    [
+     "show",
+     "credits"
+    ],
+    [
+     "hl",
+     "#m-A-credits"
+    ]
+   ],
+   "text": "Live searches go through a hard credit cap, a ledger and a cache. In our tests, archive checks used no credits.",
+   "say": "Live searches go through a hard credit cap, a ledger, and a cache. In our tests, archive checks used no credits."
+  },
+  {
+   "id": "s11",
+   "do": [
+    [
+     "hl",
+     null
+    ],
+    [
+     "card",
+     "end"
+    ]
+   ],
+   "text": "Install it from GitHub, and give your agents receipts. Built by Harsha Shinde.",
+   "gap": 1.2
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "serp-receipts",
+  "version": "0.1.0",
+  "description": "MCP server + TypeScript library: SerpApi search tools for AI agents where every result carries a verifiable receipt.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Harsha Shinde (xexpertai)",
+  "bin": {
+    "serp-receipts": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "fixtures",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "tsc -p tsconfig.build.json",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "record": "tsx scripts/record.ts",
+    "demo": "tsx scripts/demo.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "serpapi",
+    "search",
+    "provenance",
+    "receipts",
+    "ai-agents",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}

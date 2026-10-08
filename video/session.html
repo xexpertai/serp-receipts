@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>serp-receipts demo</title>
+<!-- Renders the REAL transcript written by scripts/demo.ts (two MCP clients talking to serp-receipts over stdio).
+     The footage script loads the transcript with window.load(t) and reveals it with window.show(step). -->
+<style>
+  :root { --bg:#0f1513; --panel:#151d1a; --line:#24302b; --ink:#e7efe9; --dim:#8fa39a; --acc:#5eead4; --ok:#4ade80; --bad:#f87171; --warn:#fbbf24; --key:#93c5fd; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font-family:"DejaVu Sans", sans-serif; overflow:hidden; }
+  .mono { font-family:"DejaVu Sans Mono", monospace; }
+  /* cards */
+  .card { position:fixed; inset:0; display:none; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:28px; padding:60px; }
+  .card.on { display:flex; }
+  .card h1 { font-size:84px; margin:0; letter-spacing:-1px; }
+  .card h1 .r { color:var(--acc); }
+  .card p { font-size:38px; color:var(--dim); margin:0; max-width:1500px; line-height:1.35; }
+  .flow { display:flex; gap:26px; align-items:center; margin-top:20px; }
+  .flow .b { border:2px solid var(--line); background:var(--panel); border-radius:18px; padding:26px 30px; font-size:30px; min-width:330px; }
+  .flow .b small { display:block; color:var(--dim); font-size:22px; margin-top:8px; }
+  .flow .ar { font-size:44px; color:var(--acc); }
+  .card.on .seq { opacity:0; animation: fin .6s ease-out forwards; animation-delay: var(--d, 0s); }
+  .card.on .late { opacity:0; animation: fin .8s ease-out 1.6s forwards; }
+  @keyframes fin { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+  .tag { display:inline-block; border-radius:999px; padding:6px 18px; font-size:22px; border:1px solid var(--line); color:var(--dim); }
+  /* session */
+  #session { position:fixed; inset:0; display:none; padding:26px 34px 20px; }
+  #session.on { display:block; }
+  header { display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
+  header .t { font-size:30px; font-weight:bold; }
+  header .t span { color:var(--acc); }
+  .cols { display:grid; grid-template-columns: 1fr 1fr; gap:26px; height:calc(100% - 66px); }
+  .col { background:var(--panel); border:2px solid var(--line); border-radius:18px; display:flex; flex-direction:column; overflow:hidden; }
+  .col .h { padding:16px 22px; border-bottom:2px solid var(--line); display:flex; justify-content:space-between; align-items:center; gap:12px; }
+  .col .h b { font-size:28px; }
+  .col .h .tag { font-size:19px; }
+  .col .h .tag.rec { color:var(--warn); border-color:#5b4a1a; }
+  .col .h .tag.live { color:var(--ok); border-color:#1f4d33; }
+  .feed { flex:1; overflow:hidden; padding:18px 22px; display:flex; flex-direction:column; gap:14px; }
+  .msg { display:none; border-radius:14px; padding:14px 18px; font-size:23px; line-height:1.4; }
+  .msg.on { display:block; animation: pop .35s ease-out; }
+  @keyframes pop { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+  .call { background:#0c1210; border:1px solid var(--line); }
+  .call .k { color:var(--dim); font-size:19px; margin-bottom:4px; }
+  .call .c { color:var(--key); }
+  .res { background:#101815; border:1px solid var(--line); }
+  .say { background:#16302a; border:1px solid #23574a; font-size:25px; }
+  .row { display:flex; gap:14px; align-items:baseline; padding:7px 0; border-bottom:1px dashed #22302a; }
+  .row:last-child { border-bottom:none; }
+  .rid { color:var(--acc); white-space:nowrap; font-size:20px; }
+  .row .ti { flex:1; }
+  .row .n { color:var(--warn); white-space:nowrap; font-weight:bold; }
+  .chips span { display:inline-block; margin:6px 10px 2px 0; padding:6px 16px; border-radius:10px; background:#0c1210; border:1px solid var(--line); color:var(--key); }
+  .kv { display:grid; grid-template-columns: 210px 1fr; gap:3px 14px; font-size:20px; }
+  .kv .k { color:var(--dim); }
+  .kv .v { word-break:break-all; }
+  .chk { font-size:21px; padding:3px 0; }
+  .chk .ok { color:var(--ok); } .chk .no { color:var(--bad); }
+  .chk .d { color:var(--dim); }
+  .verdict { display:inline-block; font-size:30px; font-weight:bold; padding:6px 20px; border-radius:12px; margin-bottom:8px; }
+  .verdict.VERIFIED { background:#123524; color:var(--ok); }
+  .verdict.MISMATCH { background:#3a1616; color:var(--bad); }
+  .edit { background:#2b2410; border:1px solid #5b4a1a; color:#fde68a; }
+  .hl { outline:4px solid var(--warn); outline-offset:3px; border-radius:8px; }
+  .row.hl, .kv .hl { outline-offset:1px; }
+  .row { padding-left:6px !important; padding-right:6px !important; }
+  .kv .v { padding:1px 6px; }
+  #chips { margin-top:12px; }
+  .res .small { margin-bottom:10px; }
+  .small { color:var(--dim); font-size:18px; }
+  .ph { color:var(--dim); font-size:24px; line-height:1.5; border:2px dashed var(--line); border-radius:14px; padding:22px; }
+  .msg.compact .chk { display:none; }
+  .msg .sum { display:none; color:var(--dim); font-size:21px; }
+  .msg.compact .sum { display:block; margin-top:6px; }
+</style>
+</head>
+<body>
+<section class="card" id="card-title">
+  <h1>serp-<span class="r">receipts</span></h1>
+  <p>Verifiable SerpApi search for AI agents</p>
+  <p style="font-size:30px" class="late">When an agent quotes a search result, how do you know the number is real?</p>
+</section>
+<section class="card" id="card-how">
+  <h1 style="font-size:64px">Every result comes with a <span class="r" style="color:var(--acc)">receipt</span></h1>
+  <div class="flow">
+    <div class="b mono seq" style="--d:.2s">search<small>SerpApi via MCP</small></div><div class="ar seq" style="--d:1.4s">→</div>
+    <div class="b mono seq" style="--d:1.8s">receipt<small>search id · time · pointer · sha256</small></div><div class="ar seq" style="--d:3.2s">→</div>
+    <div class="b mono seq" style="--d:3.6s">verify_receipt<small>re-fetch from SerpApi's archive</small></div>
+  </div>
+  <p style="font-size:28px;--d:5s" class="seq">Open-source MCP server + TypeScript library · MIT</p>
+</section>
+<section class="card" id="card-end">
+  <h1 style="font-size:66px">serp-<span class="r">receipts</span></h1>
+  <p class="mono" style="color:var(--ink)">github.com/xexpertai/serp-receipts</p>
+  <p style="font-size:30px">Install from GitHub · works with any MCP client · MIT license</p>
+  <p style="font-size:36px;color:var(--ink);margin-top:26px">Built by Harsha Shinde · xexpertai</p>
+  <p style="font-size:24px">Built with AI assistance (Claude Code); narration voice is synthetic (Kokoro TTS).<br>Search: a real SerpApi response recorded 9 Oct 2026 IST, replayed · Verification: live, without an API key.</p>
+</section>
+
+<section id="session">
+  <header>
+    <div class="t">serp-<span>receipts</span> · real MCP session (stdio)</div>
+    <div class="tag mono" id="when"></div>
+  </header>
+  <div class="cols">
+    <div class="col"><div class="h"><b>Agent A</b><span class="tag rec" id="tagA">RECORDED replay of a real SerpApi search · 0 credits</span></div><div class="feed" id="A"></div></div>
+    <div class="col"><div class="h"><b>Verifier B</b><span class="tag live" id="btag">no SerpApi key · LIVE archive fetch</span></div><div class="feed" id="B"></div></div>
+  </div>
+</section>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const shortEp = (u) => u ? u.replace(/searches\/([^/]{6})[^/]+\//, "searches/$1…/") : "null";
+let T = null;
+function msg(col, cls, html, step) {
+  const d = document.createElement("div"); d.className = "msg " + cls; d.dataset.step = step; d.innerHTML = html;
+  const id = `m-${col.slice(1)}-${step}`; d.id = document.getElementById(id) ? id + "-2" : id;
+  $(col).appendChild(d); return d;
+}
+function checks(r) {
+  return r.checks.map((c) => `<div class="chk"><span class="${c.ok ? "ok" : "no"}">${c.ok ? "✓" : "✗"}</span> <span class="mono">${esc(c.name)}</span> <span class="d">${esc(c.detail.length > 60 && c.ok ? "" : c.detail)}</span></div>`).join("");
+}
+window.load = (t) => {
+  T = t;
+  const st = (tool, i = 0) => t.steps.filter((s) => s.tool === tool)[i];
+  const tools = st("tools/list").result;
+  const s = st("search"); const r = st("get_receipt").result;
+  const v1 = st("verify_receipt", 0); const v2 = st("verify_receipt", 1); const cr = st("credits").result;
+  const n = r.cited["inline_links.cited_by.total"];
+  $("#when").textContent = "search processed " + r.processed_at + " (9 Oct IST)";
+  if (t.offline) $("#btag").textContent = "no SerpApi key · recorded archive copy";
+  msg("#A", "call", `<div class="k">MCP → tools/list</div><div class="chips mono" id="chips">${tools.map((x) => `<span>${x}</span>`).join("")}</div>`, "tools");
+  msg("#A", "call", `<div class="k">MCP → tools/call</div><span class="c mono">search</span> <span class="mono">{ engine: "${s.args.engine}", q: "${esc(s.args.q)}", limit: ${s.args.limit} }</span>`, "search");
+  msg("#A", "res", `<div class="small">source: ${s.result.source} · search_id <span class="mono">${s.result.search.search_id}</span></div>` +
+    s.result.results.map((x, i) => `<div class="row" id="row${i}"><span class="rid mono">${x.receipt_id}</span><span class="ti">${esc(x.title)}</span><span class="n">cited by ${x["inline_links.cited_by.total"]}</span></div>`).join(""), "results");
+  msg("#A", "say", `“The top paper is cited by <b>${n}</b> <span class="mono" style="color:var(--acc)">[${r.receipt_id}]</span>.”`, "results");
+  const kv = [["receipt_id", r.receipt_id], ["engine", r.engine], ["params", JSON.stringify(r.params)], ["search_id", r.search_id], ["processed_at", r.processed_at],
+    ["json_endpoint", shortEp(r.json_endpoint)], ["pointer", r.pointer], ["item_sha256", r.item_sha256], ["cited…total", n]];
+  msg("#A", "res", `<div class="k mono" style="color:var(--dim);font-size:19px;margin-bottom:6px">get_receipt → (excerpt)</div><div class="kv mono">${kv.map(([k, v]) => `<div class="k">${k}</div><div class="v" id="kv-${k.replace(/\W/g, "")}">${esc(v)}</div>`).join("")}</div>`, "receipt");
+  msg("#A", "res", `<div class="k mono" style="color:var(--dim);font-size:19px;margin-bottom:6px">credits →</div><div class="kv mono"><div class="k">mode</div><div class="v">${cr.mode}</div><div class="k">local cap</div><div class="v">${cr.local_cap} credits (hard)</div><div class="k">used here</div><div class="v">${cr.local_credits_used}</div><div class="k">receipts stored</div><div class="v">${cr.receipts_stored}</div></div>`, "credits");
+
+  msg("#B", "ph", `Verifier B is a second MCP client with <b>no SerpApi key</b>. It will check Agent A's receipts against SerpApi's archive.`, "tools");
+  msg("#B", "call", `<div class="k">MCP → tools/call</div><span class="c mono">verify_receipt</span> <span class="mono">{ receipt: {…${r.receipt_id}}, claims: [{ field: "inline_links.cited_by.total", value: ${n} }] }</span>`, "verify");
+  msg("#B", "res", `<div class="verdict ${v1.result.verdict}">${v1.result.verdict}</div> <span class="small">archive: ${v1.result.archive_source} via ${v1.result.archive_via}</span> <span class="sum">${v1.result.checks.filter((c) => c.ok).length} of ${v1.result.checks.length} checks passed, claim cited_by = ${n}</span>${checks(v1.result)}`, "verified").id = "v1";
+  msg("#B", "edit", `✎ Someone edits the receipt: <span class="mono">cited_by.total ${n} → <b>${n * 10}</b></span>`, "tamper");
+  msg("#B", "res", `<div class="verdict ${v2.result.verdict}">${v2.result.verdict}</div> <span class="small">archive: ${v2.result.archive_source} via ${v2.result.archive_via} · excerpt</span>${checks({ checks: v2.result.checks.filter((c) => !c.ok || c.name === "item_hash" || c.name === "archive_found") })}`, "tampered");
+};
+const ORDER = ["tools", "search", "results", "receipt", "verify", "verified", "tamper", "tampered", "credits"];
+window.card = (name) => { document.querySelectorAll(".card").forEach((c) => c.classList.toggle("on", c.id === "card-" + name)); $("#session").classList.toggle("on", name === "session"); };
+window.show = (step) => {
+  window.card("session");
+  const upto = ORDER.indexOf(step);
+  document.querySelectorAll(".msg").forEach((m) => m.classList.toggle("on", ORDER.indexOf(m.dataset.step) <= upto && !(m.classList.contains("ph") && upto >= ORDER.indexOf("verify"))));
+  $("#v1")?.classList.toggle("compact", upto >= ORDER.indexOf("tamper"));
+  // Keep the newest message of each column visible: hide the oldest ones if a column overflows.
+  for (const col of ["#A", "#B"]) {
+    const f = $(col); const on = [...f.querySelectorAll(".msg.on")];
+    on.forEach((m) => (m.style.display = ""));
+    let i = 0; while (f.scrollHeight > f.clientHeight + 2 && i < on.length - 1) { on[i].style.display = "none"; i++; }
+  }
+};
+window.hl = (sel) => { document.querySelectorAll(".hl").forEach((x) => x.classList.remove("hl")); if (sel) document.querySelector(sel)?.classList.add("hl"); };
+const q = new URLSearchParams(location.search);
+if (q.get("card")) window.card(q.get("card"));
+</script>
+</body>
+</html>
